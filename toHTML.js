@@ -1,12 +1,3 @@
-var obj = {
-  header: "THIS IS A TITLE!",
-  things: ['one', 'two', 'threeeeeez'],
-  nested: {
-    bird: "chirp",
-    egg: "egg!"
-  }
-};
-
 var j2h = {
   toHTML: function(obj) {
     if (Array.isArray(obj))
@@ -32,5 +23,3 @@ var j2h = {
     return string + "</dl>\n";
   }
 }
-
-console.log(j2h.toHTML(obj));
